@@ -1,0 +1,131 @@
+#Ex 01 - 1. Faça um Programa que peça um número e então mostre a mensagem: O número informado foi [número].
+
+programa
+{
+	inteiro numero
+	funcao inicio()
+	{
+	escreva("Digite um número:" )
+	leia(numero)
+	escreva("O número informado foi: " , numero)
+	
+	
+	}
+}
+
+#Ex 02 - Faça um Programa que peça dois números e imprima a soma, a subtração e a multiplicação do primeiro pelo segundo
+
+programa
+{
+	inteiro numeroUm
+	inteiro numeroDois
+	
+	funcao inicio()
+	{
+	escreva("Digite o primeiro número:" )
+	leia(numeroUm)
+	
+	escreva("Digite o segundo número:" )
+	leia(numeroDois)
+
+	inteiro soma = numeroUm + numeroDois
+	inteiro subtracao = numeroUm - numeroDois
+	inteiro multiplicacao = numeroUm * numeroDois
+
+	escreva("A soma dos números é ", soma, "\n")
+	escreva("A subtração dos números é ", subtracao, "\n")
+	escreva("A multiplicação dos números é ", multiplicacao, "\n")
+	 
+	}
+}
+
+#Ex 03 - Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+
+programa
+{
+	real notaPrimeiro
+	real notaSegundo
+	real notaTerceiro
+	real notaQuarto
+
+	
+	funcao inicio()
+	{
+	escreva("Digite a nota do primeiro bimestre:" )
+	leia(notaPrimeiro)
+	escreva("Digite a nota do segundo bimestre:" )
+	leia(notaSegundo)
+	escreva("Digite a nota do terceiro bimestre:" )
+	leia(notaTerceiro)
+	escreva("Digite a nota do quarto bimestre:" )
+	leia(notaQuarto)
+
+	real media = (notaPrimeiro + notaSegundo + notaTerceiro + notaQuarto) / 4
+	
+
+	escreva("A nota média do aluno foi de " ,media)
+	 
+	}
+}
+
+#Ex 04 -  Faça um programa que peça o preço do litro da gasolina e solicite quantos litros foi vendido a determinado cliente.
+O programa deve informar quanto o cliente deverá pagar pela gasolina comprada.
+
+programa
+{
+	real precoGasolina
+	real litrosVendidos
+	
+	funcao inicio()
+	{
+	escreva("Informe o preço da gasolina:" )
+	leia(precoGasolina)
+	escreva("Informe quantos litros de gasolina foram vendidos a esse cliente:" )
+	leia(litrosVendidos)
+
+	real valorPago = precoGasolina * litrosVendidos
+	
+
+	escreva("O valor a ser pago pelo cliente é de R$",valorPago )
+	 
+	}
+}
+
+
+#Ex 05 - Faça um programa que peça o valor de uma viagem “eurotrip” que será realizada por um grupo de amigos. Os brasileiros sairão com destino a três
+locais: 1º Alemanha, 2º Portugal e 3º Itália. O programa deve solicitar o preço atual de cada viagem, a quantidade de pessoas que irão nessa viagem. Após isso, imprimir o valor total da viagem
+somando a quantidade total de pessoas que visitarão todos os 03 destinos.
+
+programa
+{
+
+	real viagemAlemanha
+	real viagemPortugal
+	real viagemItalia
+
+	inteiro pessoas
+	
+	funcao inicio()
+	{
+	escreva("Gentileza informar o valor cotado para a viagem para a Alemanha: " )
+	leia(viagemAlemanha)
+	escreva("Gentileza informar o valor cotado para a viagem para a Portugal: " )
+	leia(viagemPortugal)
+	escreva("Gentileza informar o valor cotado para a viagem para a Italia: " )
+	leia(viagemItalia)
+	escreva("Gentileza informar quantas pessoas irão nessa viagem")
+	leia(pessoas)
+	
+
+	real valorIndividual = viagemAlemanha + viagemPortugal + viagemItalia
+	escreva("Apos algumas cotações, concluímos que teremos um valor individual de R$", valorIndividual)
+
+
+	real valorGrupo = (viagemAlemanha + viagemPortugal + viagemItalia) * pessoas
+	escreva("Sendo assim, em grupo teremos um gasto de R$", valorGrupo)
+	
+	}
+}
+
+
+
